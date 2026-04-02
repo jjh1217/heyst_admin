@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>대시보드</p>
+                <p>연결 현황</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span class="on">대시보드</span>
+                        <div class="sub on">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html" class="on">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span>거래 관리</span>
+                        <div class="sub">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <div class="dash_wrap">
+                <section class="dash_box dash_chart">
+                    <h2 class="box-tit">연결 현황</h2>
+                    <article class="box-item dash_chartBox">
+                        <div class="dash_chartDate">
+                            <span class="prev"></span>
+                            <strong>2022.09</strong>
+                            <span class="next"></span>
+                        </div>
+                        <div class="dash_chartItem">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </article>
+                </section>
+                <section class="dash_box">
+                    <h2 class="box-tit">금일 아웃링크</h2>
+                    <article class="box-item dash_item">
+                        <h3>
+                            <b>309,293 회</b>
+                            <small class="awDown">89,710 회</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>OPENSEA</p>
+                                <p>40,126</p>
+                            </li>
+                            <li>
+                                <p>MAGICEDEN</p>
+                                <p>23,142,754</p>
+                            </li>
+                            <li>
+                                <p>LOOKSRARE</p>
+                                <p>7,546,980</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="dash_box">
+                    <h2 class="box-tit">자사 확인</h2>
+                    <article class="box-item dash_item">
+                        <h3>
+                            <b>7,875,113 회</b>
+                            <small class="awUp">498,940 회</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>ETH</p>
+                                <p>89,003</p>
+                            </li>
+                            <li>
+                                <p>SOL</p>
+                                <p>6,234</p>
+                            </li>
+                            <li>
+                                <p>KCT</p>
+                                <p>635</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </div><!--//dash_box-->
+
+            <div class="dash_link">
+                <section class="box-item">
+                    <h2 class="box-tit">자사</h2>
+                    <ul>
+                        <li>
+                            <p>이더리움</p>
+                            <p>1,324</p>
+                        </li>
+                        <li>
+                            <p>솔라나</p>
+                            <p>893</p>
+                        </li>
+                        <li>
+                            <p>클레이튼</p>
+                            <p>2,497</p>
+                        </li>
+                    </ul>
+                    <div class="tot">
+                        <p>총 합계</p>
+                        <p>4,552</p>
+                    </div>
+                </section>
+                <section class="box-item">
+                    <h2 class="box-tit">이더리움</h2>
+                    <ul>
+                        <li>
+                            <p>OPENSEA</p>
+                            <p>6,529</p>
+                        </li>
+                        <li>
+                            <p>LOOKSRARE</p>
+                            <p>365</p>
+                        </li>
+                    </ul>
+                    <div class="tot">
+                        <p>총 합계</p>
+                        <p>7,809</p>
+                    </div>
+                </section>
+                <section class="box-item">
+                    <h2 class="box-tit">솔라나</h2>
+                    <ul>
+                        <li>
+                            <p>OPENSEA</p>
+                            <p>125</p>
+                        </li>
+                        <li>
+                            <p>MAGICEDEN</p>
+                            <p>2,438</p>
+                        </li>
+                        <li>
+                            <p>SOLANART</p>
+                            <p>42</p>
+                        </li>
+                        <li>
+                            <p>CORALUBE</p>
+                            <p>8</p>
+                        </li>
+                    </ul>
+                    <div class="tot">
+                        <p>총 합계</p>
+                        <p>2,708</p>
+                    </div>
+                </section>
+                <section class="box-item">
+                    <h2 class="box-tit">클레이튼</h2>
+                    <ul>
+                        <li>
+                            <p>OPENSEA</p>
+                            <p>698</p>
+                        </li>
+                        <li>
+                            <p>PALA</p>
+                            <p>2,093</p>
+                        </li>
+                        <li>
+                            <p>XCLUSIVE</p>
+                            <p>48</p>
+                        </li>
+                    </ul>
+                    <div class="tot">
+                        <p>총 합계</p>
+                        <p>3,953</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            //일일 날짜 오늘 이후 선택 x
+            var now_utc = Date.now();
+            var timeOff = new Date().getTimezoneOffset()*60000;
+            var today = new Date(now_utc-timeOff).toISOString().split("T")[0];
+            $(".now_date").attr("max", today);
+            $(".now_date").val(today);
+        });
+
+        //차트 - 연결현황
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
+                datasets: [{
+                    data: [5230, 4800, 6952, 1005, 956, 6521, 3520, 4621, 6032, 1032, 2541, 5240, 2630, 456, 1254, 5230, 4800, 6952, 1005, 956, 6521, 3520, 4621, 6032, 1032, 2541, 5240, 2630, 456, 1254],
+                    backgroundColor: "rgba(0, 170, 251, .5)",
+                    borderColor: "#00AAFB",
+                    borderWidth: 1,
+                    borderRadius: 5,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</html>

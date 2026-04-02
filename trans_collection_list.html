@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>컬렉션 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html" class="on">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">컬렉션 관리</h2>
+
+            <section class="box-item">
+                <ul class="tab_box">
+                    <li><a href="#" class="item on">이더리움</a></li>
+                    <li><a href="#" class="item">솔라나</a></li>
+                    <li><a href="#" class="item">클레이튼</a></li>
+                </ul><!--/tab_box-->
+                <form action="" autocomplete="off" class="tab_search">
+                    <article>
+                        <h3>검색 조건</h3>
+                        <div class="tab_di">
+                            <input type="date">
+                            <span>~</span>
+                            <input type="date">
+                        </div>
+                        <ul class="tab_dc">
+                            <li>
+                                <input type="radio" id="date_today" name="tab_date">
+                                <label for="date_today">당일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_3" name="tab_date">
+                                <label for="date_3">3일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_7" name="tab_date">
+                                <label for="date_7">7일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_30" name="tab_date">
+                                <label for="date_30">30일</label>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>검색값</h3>
+                        <div class="form-search">
+                            <div class="drop-box">
+                                <h3 class="drop">컬렉션 명</h3>
+                                <input type="hidden" value="컬렉션 명">
+                                <p class="drop-item">
+                                    <span>컬렉션 명</span>
+                                    <span>컨트랙트 주소</span>
+                                </p>
+                            </div>
+                            <input type="text">
+                            <button type="button" class="btn">검색</button>
+                        </div>
+                    </article>
+                </form><!--//tab_search-->
+            </section>
+
+            <section class="list_wrap">
+                <span class="btn list_rgsBtb">컬렉션 등록</span>
+                <article class="list_box sc ds_trs_clt">
+                    <ul>
+                        <li class="item listTit">
+                            <div>No.</div>
+                            <div>네트워크</div>
+                            <div>컬렉션 명</div>
+                            <div>컨트랙트 주소</div>
+                            <div>최저가</div>
+                            <div>7일 거래량</div>
+                            <div>공개 여부</div>
+                            <div>등록일</div>
+                            <div>상세</div>
+                        </li>
+                        <li class="item">
+                            <div class="t-medi">6</div>
+                            <div>SOL</div>
+                            <div><a href="#" class="listLong">PRITMATES</a></div>
+                            <div><a href="#" class="listLong">M0WESP93T2BNG3ZWZHU12D3GJUB8PLMLZ8CTP3QBJJEFN</a></div>
+                            <div>543 SOL</div>
+                            <div>4,982.4 k</div>
+                            <div>공개</div>
+                            <div>2022.09.29</div>
+                            <div><a href="./trans_collection_detail.html">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="t-medi">5</div>
+                            <div>SOL</div>
+                            <div><a href="#" class="listLong">MANAGEMENT</a></div>
+                            <div><a href="#" class="listLong">S3GDBDCVTN4C611XMV6RILT9E5H0YHBQPP21TSMV1VSW1</a></div>
+                            <div>9,325 SOL</div>
+                            <div>21 k</div>
+                            <div>미공개</div>
+                            <div>2022.09.22</div>
+                            <div><a href="./trans_collection_detail.html">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="t-medi">4</div>
+                            <div>ETH</div>
+                            <div><a href="#" class="listLong">SOULS</a></div>
+                            <div><a href="#" class="listLong">ZLLGASS7Q4UUTX5EV3WSD22VF6C6UOGFA3MZG7KA6J00X</a></div>
+                            <div>96 ETH</div>
+                            <div>124.98 k</div>
+                            <div>공개</div>
+                            <div>2022.09.18</div>
+                            <div><a href="./trans_collection_detail.html">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="t-medi">3</div>
+                            <div>SOL</div>
+                            <div><a href="#" class="listLong">NAKAMIGOS</a></div>
+                            <div><a href="#" class="listLong">TWPF37CAB14G4TL8U9HNQFUPJL2XO7LNJATDW4ZMEPFJ6</a></div>
+                            <div>1,200 SOL</div>
+                            <div>7,124.68 k</div>
+                            <div>공개</div>
+                            <div>2022.08.24</div>
+                            <div><a href="./trans_collection_detail.html">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="t-medi">2</div>
+                            <div>KLAY</div>
+                            <div><a href="#" class="listLong">BEANZ</a></div>
+                            <div><a href="#" class="listLong">WHY6NLA9J4YP20VTSLSCGI7F8ADC8THYDARGOLFFO2P9H</a></div>
+                            <div>5,036 KLAY</div>
+                            <div>865 k</div>
+                            <div>미공개</div>
+                            <div>2022.08.02</div>
+                            <div><a href="./trans_collection_detail.html">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="t-medi">1</div>
+                            <div>ETH</div>
+                            <div><a href="#" class="listLong">GENUINE</a></div>
+                            <div><a href="#" class="listLong">ROUACGLRF0ZFAT4J56JZGNJFA5DQ1Y4IWQJJE7CJJBMUW</a></div>
+                            <div>3 SOL</div>
+                            <div>1.95 k</div>
+                            <div>미공개</div>
+                            <div>2022.07.28</div>
+                            <div><a href="./trans_collection_detail.html">보기</a></div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            //등록 - 팝업 - 열기
+            $(document).on("click", ".list_rgsBtb", function(e){
+                e.preventDefault();
+                let clt_rgModal = `<form action="" autocomplete="off" class="register-moadal modal-wrap">
+                                        <section class="modal-box">
+                                            <h2>컬렉션 등록</h2>
+                                            <article class="form-box">
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>컬렉션명</label>
+                                                </div>
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>컨트랙트 주소</label>
+                                                </div>
+                                                <div class="btn-half">
+                                                    <span class="btn light confirm-cancel">취소</span>
+                                                    <button type="button" class="btn">등록</button>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </form>`;
+                $("main").append(clt_rgModal);
+                $(".register-moadal").fadeIn(170);
+                $("body").addClass("over-hidden");
+            });
+        });
+    </script>
+</html>

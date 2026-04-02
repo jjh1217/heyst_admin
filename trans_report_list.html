@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>신고</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html" class="on">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">신고</h2>
+            <section class="list_wrap">
+                <a href="#" class="btn green list_rgsBtb">EXCEL</a>
+                <article class="list_scroll">
+                    <div class="list_box sc ds_trs_rp">
+                        <ul>
+                            <li class="item listTit">
+                                <div>
+                                    <p class="listChk">
+                                        <input type="checkbox" id="chk_all">
+                                        <label for="chk_all"></label>
+                                    </p>
+                                </div>
+                                <div>분류</div>
+                                <div>내용</div>
+                                <div>작성일</div>
+                                <div>상세</div>
+                            </li>
+                            <li class="item">
+                                <div class="t-medi">
+                                    <p class="listChk chkItem">
+                                        <input type="checkbox" id="chk_1">
+                                        <label for="chk_1"></label>
+                                    </p>
+                                </div>
+                                <div class="t-medi">선정성 위반</div>
+                                <div class="listLong">저작권이 위반된 팀인거 같아서 신고합니다.</div>
+                                <div>2022.04.09 23:55:30</div>
+                                <div><a href="./trans_report_detail.html">보기</a></div>
+                            </li>
+                            <li class="item">
+                                <div class="t-medi">
+                                    <p class="listChk chkItem">
+                                        <input type="checkbox" id="chk_1">
+                                        <label for="chk_1"></label>
+                                    </p>
+                                </div>
+                                <div class="t-medi">메크로</div>
+                                <div class="listLong">아무래도 메크로를 돌리는 것 같습니다.</div>
+                                <div>2022.03.23 11:23:47</div>
+                                <div><a href="./trans_report_detail.html">보기</a></div>
+                            </li>
+                            <li class="item">
+                                <div class="t-medi">
+                                    <p class="listChk chkItem">
+                                        <input type="checkbox" id="chk_1">
+                                        <label for="chk_1"></label>
+                                    </p>
+                                </div>
+                                <div class="t-medi">복제</div>
+                                <div class="listLong">복제 제품인거 같아요.</div>
+                                <div>2022.02.25 07:03:12</div>
+                                <div><a href="./trans_report_detail.html">보기</a></div>
+                            </li>
+                            <li class="item">
+                                <div class="t-medi">
+                                    <p class="listChk chkItem">
+                                        <input type="checkbox" id="chk_1">
+                                        <label for="chk_1"></label>
+                                    </p>
+                                </div>
+                                <div class="t-medi">SCAM</div>
+                                <div class="listLong">이건 SCAM인 듯 합니다.</div>
+                                <div>2022.01.27 18:32:09</div>
+                                <div><a href="./trans_report_detail.html">보기</a></div>
+                            </li>
+                            <li class="item">
+                                <div class="t-medi">
+                                    <p class="listChk chkItem">
+                                        <input type="checkbox" id="chk_1">
+                                        <label for="chk_1"></label>
+                                    </p>
+                                </div>
+                                <div class="t-medi">기타</div>
+                                <div class="listLong">커뮤니티에서 악성 댓글을 봤습니다.</div>
+                                <div>2022.01.03 16:45:23</div>
+                                <div><a href="./trans_report_detail.html">보기</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </article><!--//list_box-->
+
+                <span class="btn list_delBtb">삭제</span>
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</html>

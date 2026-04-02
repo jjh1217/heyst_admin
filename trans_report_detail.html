@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>신고</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html" class="on">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <form action="" autocomplete="off" class="box-wrap" onkeypress="return enterBrakey(event)">
+            <h2 class="box-tit">신고</h2>
+            <main class="form-wrap full">
+                <section class="form-box">
+                    <article class="form-item">
+                        <label>등록 일자</label>
+                        <p class="fixup">2022.09.19 14:00:05</p>
+                    </article>
+                    <article class="form-item">
+                        <label>지갑 구분</label>
+                        <p class="fixup">메타마스크</p>
+                    </article>
+                    <article class="form-item">
+                        <label>지갑 주소</label>
+                        <p class="fixup">0x4bEC82D4e0e7f4eB1e05a11a4324D8e63C49e020</p>
+                    </article>
+                    <article class="form-item">
+                        <label>신고 내용</label>
+                        <p class="fixup">이 NFT 만든 팀이 발행하고, 덤핑하고 도망간 적 있는 팀이에요 그래서 신고합니다.<br>앞으로 이런 팀은 없도록 정확한 조취 부탁드리겠습니다.</p>
+                    </article>
+                </section><!--//form-box-->
+                <a href="javascript:history.back();" class="btn min">확인</a>
+            </main><!--//form-wrap-->
+        </form><!--//box-wrap-->
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</html>

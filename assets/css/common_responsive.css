@@ -1,0 +1,197 @@
+@media(min-width: 768px) {
+    /* box */
+    .box-wrap {padding: 136px 32px 32px;}
+    .box-item {padding: 24px;}
+
+    /* loading */
+    .loading-box {background-size: 60px;}
+
+    /* scroll - custom */
+    .sc::-webkit-scrollbar {
+        width: 12px;
+        height: 8px;
+    }
+
+    /* button */
+    .btn-half {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .btn.min {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    /* form - input */
+    .form-wrap {
+        grid-template-columns: auto 1fr;
+        gap: 32px 40px;
+        padding: 32px;
+    }
+    .form-wrap .btn-half {
+        grid-column: span 2;
+        justify-self: center;
+        width: 320px;
+    }
+    .form-wrap.full .btn-half {grid-column: initial;}
+    .form-wrap .form-btn.full {width: 180px;}
+    .form-box {row-gap: 32px;}
+    .form-item {grid-template-columns: auto 1fr;}
+    .form-item > textarea {height: 240px;}
+    .form-item > label {
+        grid-column: 1;
+        min-width: 100px;
+    }
+    .form-item.ai-start > label {padding-top: 10px;}
+    .form-item > label > span {
+        display: block;
+        padding-top: 4px;
+    }
+    .form-item .txt {grid-column: 2;}
+    .form-sTit {padding-top: 16px;}
+
+    /* form - checkbox */
+    .form-chk {
+        grid-template-columns: auto 1fr;
+        row-gap: 6px;
+    }
+    .form-chk > h3 {min-width: 100px;}
+
+    /* form - file */
+    .form-file {row-gap: 16px;}
+    .form-file .view {
+        width: 200px;
+        height: 240px;
+    }
+    .form-file .view > img {
+        max-width: -webkit-calc(100% - 24px);
+        max-height: -webkit-calc(100% - 24px);
+    }
+
+    /* form - select */
+    .form-select .drop-item {top: 48px;}
+
+    /* form - date */
+    .form-date {
+        grid-template-columns: auto 1fr auto 1fr;
+        row-gap: 0;
+    }
+    .form-date > label {min-width: 100px;}
+
+    /* form - search */
+    .form-search {
+        grid-template-columns: auto 1fr auto;
+        row-gap: 0;
+    }
+    .form-search .drop-box {
+        grid-column: 1;
+        margin-right: 8px;
+    }
+    .form-search .drop {padding-right: 40px;}
+    .form-search .drop-item {width: max-content;}
+
+    /* form - level */
+    .form-lv > p {grid-template-columns: 100px 1fr;}
+
+    /* page */
+    .page-box {max-width: 360px;}
+    .page-box > li a {
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .page-box > li .arrow {
+        background-position-y: 14px;
+        background-size: 12px;
+    }
+
+    /* modal - confirm */
+    .confirm-modal > .confirm-box {width: 360px;}
+
+    /* modal - register */
+    .register-moadal .modal-box > h2 {padding: 8px 0;}
+}
+
+@media(min-width: 1280px) {
+    /* box */
+    .box-wrap {padding-left: 272px;}
+    
+    /* button */
+    .btn:hover {box-shadow: 0 0 16px rgba(0, 0, 0, .2);}
+    .btn.light:hover {box-shadow: 0 0 16px rgba(0, 0, 0, .1);}
+
+    /* drop */
+    .drop-item > a:hover,
+    .drop-item > span:hover {
+        color: #FFF;
+        background-color: #8DBFF2;
+    }
+
+    /* header */
+    header {padding-left: 240px;}
+    header > nav {grid-template-columns: 1fr;}
+    header .logo {display: none;}
+    header .mobileMeun {display: none;}
+    header .info {
+        padding-right: 24px;
+        column-gap: 24px;
+    }
+    header .info > p > small {display: inline-block;}
+    header .info .logout:hover {
+        font-weight: 700;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+    }
+    header .paths > p {padding: 0 32px 0 24px;}
+
+    /* menu */
+    .menu-wrap {
+        display: block;
+        width: 240px;
+        height: 100%;
+    }
+    .menu-box {
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-box .logo {display: block;}
+    .menu-box > ul {height: -webkit-calc(100% - 200px);}
+    .menu-box .item > a:hover, 
+    .menu-box .item > span:hover {
+        font-weight: 600;
+    }
+    .menu-box .item > a.on:hover, 
+    .menu-box .item > span.on:hover {
+        font-weight: 700;
+    }
+    .menu-box .item .sub > a:hover {color: #1976D2;}
+
+    /* form - input */
+    .form-item .fixup > a:hover {color: #1976D2;}
+
+    /* form - file */
+    .form-file .view {
+        width: 300px;
+        height: 340px;
+    }
+    .form-file > label:hover {box-shadow: 0 0 16px rgba(0, 0, 0, .2);}
+
+    /* form - date */
+    .form-date > span {
+        padding:  0 20px;
+        font-size: 24px;
+    }
+        
+    /* page */
+    .page-box > li a:hover {
+        font-weight: 600;
+        -webkit-filter: brightness(20%);
+        filter: brightness(20%);
+    }
+    .page-box > li a.on:hover {
+        font-weight: 700;
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+    }
+}

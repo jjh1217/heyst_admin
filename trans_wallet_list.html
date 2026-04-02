@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>지갑주소 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html" class="on">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">지갑주소 관리</h2>
+
+            <section class="box-item">
+                <ul class="tab_box">
+                    <li><a href="#" class="item on">이더리움</a></li>
+                    <li><a href="#" class="item">솔라나</a></li>
+                    <li><a href="#" class="item">클레이튼</a></li>
+                </ul><!--/tab_box-->
+                <form action="" autocomplete="off" class="tab_search">
+                    <article>
+                        <h3>검색 조건</h3>
+                        <div class="tab_di">
+                            <input type="date">
+                            <span>~</span>
+                            <input type="date">
+                        </div>
+                        <ul class="tab_dc">
+                            <li>
+                                <input type="radio" id="date_today" name="tab_date">
+                                <label for="date_today">당일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_3" name="tab_date">
+                                <label for="date_3">3일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_7" name="tab_date">
+                                <label for="date_7">7일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_30" name="tab_date">
+                                <label for="date_30">30일</label>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>검색값</h3>
+                        <div class="form-search">
+                            <div class="drop-box">
+                                <h3 class="drop">컬렉션 명</h3>
+                                <input type="hidden" value="컬렉션 명">
+                                <p class="drop-item">
+                                    <span>컬렉션 명</span>
+                                    <span>컨트랙트 주소</span>
+                                </p>
+                            </div>
+                            <input type="text">
+                            <button type="button" class="btn">검색</button>
+                        </div>
+                    </article>
+                </form><!--//tab_search-->
+            </section>
+
+            <section class="list_wrap">
+                <article class="list_box sc ds_trs_wAddr">
+                    <ul>
+                        <li class="item listTit">
+                            <div>
+                                <p class="listChk">
+                                    <input type="checkbox" id="chk_all">
+                                    <label for="chk_all"></label>
+                                </p>
+                            </div>
+                            <div>접속 이력</div>
+                            <div>지갑 구분</div>
+                            <div>지갑 주소</div>
+                            <div>상태</div>
+                            <div>상세</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div>2022-04-29 15:30:10</div>
+                            <div>메타마스크</div>
+                            <div class="listLong wad_addr">DNcvYjQR02S3RclqcFXBOEhNQfFZRyCUoQbg9OvfbdGwN</div>
+                            <div class="t-sb wad_state c-red">차단</div>
+                            <div><a href="#" class="detail">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_2">
+                                    <label for="chk_2"></label>
+                                </p>
+                            </div>
+                            <div>2022-11-11 15:30:10</div>
+                            <div>팬텀</div>
+                            <div class="listLong wad_addr">Y0SXVdxPWS5Y7HsKCGAJPcXVBYAHqzbLtNdF7K6hNxhPp</div>
+                            <div class="t-sb wad_state c-green">허용</div>
+                            <div><a href="#" class="detail">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_3">
+                                    <label for="chk_3"></label>
+                                </p>
+                            </div>
+                            <div>2022-09-30 15:30:10</div>
+                            <div>카이카스</div>
+                            <div class="listLong wad_addr">UX5RjzkOr3HcQlS7NOTC4pORhc6d9KbcoCIFE3AyP8Ma0</div>
+                            <div class="t-sb wad_state c-green">허용</div>
+                            <div><a href="#" class="detail">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_4">
+                                    <label for="chk_4"></label>
+                                </p>
+                            </div>
+                            <div>2022-04-29 15:30:10</div>
+                            <div>메타마스크</div>
+                            <div class="listLong wad_addr">m9UZIYWsCHkq1cm8YWpHNLKQobs77rmDYSQSEj9C8M1wp</div>
+                            <div class="t-sb wad_state c-red">차단</div>
+                            <div><a href="#" class="detail">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_5">
+                                    <label for="chk_5"></label>
+                                </p>
+                            </div>
+                            <div>2022-11-11 15:30:10</div>
+                            <div>팬텀</div>
+                            <div class="listLong wad_addr">e7PqYgHyEMRz8LkSnJI9LbyhPBYs0Sh8mPUaEd5cxOZcG</div>
+                            <div class="t-sb wad_state c-green">허용</div>
+                            <div><a href="#" class="detail">보기</a></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_6">
+                                    <label for="chk_6"></label>
+                                </p>
+                            </div>
+                            <div>2022-09-30 15:30:10</div>
+                            <div>카이카스</div>
+                            <div class="listLong wad_addr">9yVDJch85sQLJU9qWY9xwU47wSydAbBbeRgnpHDz7rTXN</div>
+                            <div class="t-sb wad_state c-green">허용</div>
+                            <div><a href="#" class="detail">보기</a></div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+
+                <span class="btn list_delBtb">삭제</span>
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            //상세 - 팝업 열기
+            $(document).on("click", ".ds_trs_wAddr .item .detail", function(e){
+                e.preventDefault();
+                let wal_modal;
+                if($(this).closest(".item").find(".wad_state").hasClass("c-green")){
+                    //허용
+                    wal_modal = `<form action="" autocomplete="off" class="wal_detail modal-wrap">
+                                    <article class="modal-box wal_dtBox">
+                                        <h2>지갑 주소 관리 상세</h2>
+                                        <div class="item sc">
+                                            <ul class="info">
+                                                <li>
+                                                    <p>네트워크</p>
+                                                    <p>이더리움 (ETH)</p>
+                                                </li>
+                                                <li>
+                                                    <p>지갑 구분</p>
+                                                    <p>메타마스크</p>
+                                                </li>
+                                                <li>
+                                                    <p>지갑 주소</p>
+                                                    <p>0x4bEC82D4e0e7f4eB1e05a11a4324D8e63C49e020</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="info">
+                                                <li>
+                                                    <p>상태</p>
+                                                    <p class="t-medi c-green">허용</p>
+                                                </li>
+                                                <li>
+                                                    <p>등록 담당자</p>
+                                                    <p>-</p>
+                                                </li>
+                                                <li>
+                                                    <p>블랙리스트 등록 일시</p>
+                                                    <p>미등록</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-half">
+                                            <span class="btn dark blRegister">블랙리스트 등록</span>
+                                            <span class="btn">확인</span>
+                                        </div>
+                                    </article>
+                                </form>`;
+                } else {
+                    //차단 및 해제
+                    wal_modal = `<form action="" autocomplete="off" class="wal_detail modal-wrap">
+                                    <article class="modal-box wal_dtBox">
+                                        <h2>지갑 주소 관리 상세</h2>
+                                        <div class="item sc">
+                                            <ul class="info">
+                                                <li>
+                                                    <p>네트워크</p>
+                                                    <p>이더리움 (ETH)</p>
+                                                </li>
+                                                <li>
+                                                    <p>지갑 구분</p>
+                                                    <p>메타마스크</p>
+                                                </li>
+                                                <li>
+                                                    <p>지갑 주소</p>
+                                                    <p>0x4bEC82D4e0e7f4eB1e05a11a4324D8e63C49e020</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="info">
+                                                <li>
+                                                    <p>상태</p>
+                                                    <p class="t-medi c-red">차단</p>
+                                                </li>
+                                                <li>
+                                                    <p>등록 담당자</p>
+                                                    <p>유준혁</p>
+                                                </li>
+                                                <li>
+                                                    <p>블랙리스트 등록 일시</p>
+                                                    <p>2022-12-28 23:58:45</p>
+                                                </li>
+                                            </ul>
+                                            <div class="reason">
+                                                <ul class="form-box">
+                                                    <li><h3 class="form-sTit">블랙리스트 등록</h3></li>
+                                                    <li class="form-item">
+                                                        <label>등록 사유</label>
+                                                        <p class="fixup">범죄 이력</p>
+                                                    </li>
+                                                    <li class="form-item ai-start">
+                                                        <label>내용</label>
+                                                        <p class="fixup">NFT 마켓 거래 중 범죄 이력이 발견된 지갑 주소이므로 블랙리스트에 등록합니다.</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="btn-half">
+                                            <span class="btn dark blRelease">블랙리스트 해제</span>
+                                            <span class="btn">확인</span>
+                                        </div>
+                                    </article>
+                                </form>`;
+                }
+                $("main").append(wal_modal);
+                $(".wal_detail .reason").show();
+                $(".wal_detail").fadeIn(170);
+                $("body").addClass("over-hidden");
+            });
+
+            //상세 - 팝업 - 상황별 버튼
+            $(document).on("click", ".wal_dtBox .btn", function(){
+                if($(this).hasClass("blRegister")) {
+                    //등록
+                    let blackInput = `<div class="reason">
+                                        <ul class="form-box">
+                                            <li><h3 class="form-sTit">블랙리스트 등록</h3></li>
+                                            <li class="form-item form-select forq drop-box">
+                                                <h3 class="drop">등록 사유를 선택해주세요.</h3>
+                                                <label>등록 사유</label>
+                                                <p class="drop-item">
+                                                    <span>수사 협조</span>
+                                                    <span>저작권 위반</span>
+                                                    <span>범죄 이력</span>
+                                                    <span>선정성 위반</span>
+                                                    <span>기타</span>
+                                                </p>
+                                                <p class="txt">등록 사유를 선택해 주세요.</p>
+                                            </li>
+                                            <li class="form-item forq ai-start">
+                                                <textarea></textarea>
+                                                <label>내용</label>
+                                                <p class="txt">10글자 이상 입력하여 주세요.</p>
+                                            </li>
+                                        </ul>
+                                    </div>`;
+                    $(".wal_detail .item").append(blackInput);
+                    $(".wal_detail .reason").slideDown(100);
+                    $(".wal_detail .btn-half").empty();
+                    $(".wal_detail .btn-half").append(`<span class="btn light blCancel">취소</span><span class="btn blDone">등록</span>`);
+                } else if($(this).hasClass("blCancel")) {
+                    //등록 - 취소
+                    $(".wal_detail .reason").slideUp(100,function(){
+                        $(".wal_detail .reason").remove();
+                    });
+                    $(".wal_detail .btn-half").empty();
+                    $(".wal_detail .btn-half").append(`<span class="btn dark blRegister">블랙리스트 등록</span><span class="btn">확인</span>`);
+                } else if($(this).hasClass("blDone")) {
+                    //등록 - 확인
+                    var bl_val = true;
+                    $(".forq textarea, .forq.form-select").each(function(){
+                        if($(this).val() != "") {
+                            if($(this).val().length < 10){
+                                return bl_val = false;
+                            }
+                        } else if($(this).children(".drop").hasClass("selectOn")) {
+                            return is_val = true;
+                        } else {
+                            return bl_val = false;
+                        }
+                    });
+                    if(bl_val) {
+                        lastTxt = "입력한 정보로<br>등록 하시겠습니까?"
+                        lastDone = `<button type="button" class="confirm-done btn">확인</button>`;
+                        confirmLast(lastTxt, lastDone);
+                    } else {
+                        gateTxt = "필수 항목을 확인해 주세요."
+                        confirmGate(gateTxt);
+                    }
+                } else if($(this).hasClass("blRelease")) {
+                    //해제
+                    lastTxt = "블랙리스트를<br>해제 하시겠습니까?"
+                    lastDone = `<button type="button" class="confirm-done btn">확인</button>`;
+                    confirmLast(lastTxt, lastDone);
+                } else {
+                    modalClose($(this));
+                }
+            });
+        });
+    </script>
+</html>

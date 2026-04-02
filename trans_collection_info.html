@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>컬렉션 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html" class="on">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <form action="" autocomplete="off" class="box-wrap" onkeypress="return enterBrakey(event)">
+            <h2 class="box-tit">컬렉션 관리</h2>
+            <main class="form-wrap">
+                <section class="form-file forq">
+                    <div class="view on">
+                        <p>컬렉션 이미지</p>
+                        <img src="./assets/img/item1.png" alt="NFT">
+                    </div>
+                    <input type="file" id="fileImg">
+                </section>
+                <section class="form-box">
+                    <article class="form-chk single forq">
+                        <h3>공개 여부</h3>
+                        <ul class="vowel">
+                            <li class="item">
+                                <input type="checkbox" id="open_1" disabled>
+                                <label for="open_1">공개</label>
+                            </li>
+                            <li class="item">
+                                <input type="checkbox" id="open_2" disabled checked>
+                                <label for="open_2">미공개</label>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="form-chk single forq">
+                        <h3>인증 여부</h3>
+                        <ul class="vowel">
+                            <li class="item">
+                                <input type="checkbox" id="cert_1" disabled checked>
+                                <label for="cert_1">인증</label>
+                            </li>
+                            <li class="item">
+                                <input type="checkbox" id="cert_2" disabled>
+                                <label for="cert_2">미인증</label>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="form-item">
+                        <label>컬렉션 명</label>
+                        <p class="fixup">PRIAMTES</p>
+                    </article>
+                    <article class="form-item">
+                        <label>개발 컬렉션</label>
+                        <p class="fixup">MATE PRIAMTES</p>
+                    </article>
+                    <article class="form-item">
+                        <label>컨트랙트 주소</label>
+                        <p class="fixup">LuwDSyzTzZj4pewpfJG8wdyMv4mhQJGKpXePky4v62p</p>
+                    </article>
+                    <article class="form-chk single">
+                        <h3>네트워크</h3>
+                        <div class="vowel">
+                            <p class="item">
+                                <input type="checkbox" id="net_1" disabled>
+                                <label for="net_1">이더리움</label>
+                            </p>
+                            <p class="item">
+                                <input type="checkbox" id="net_2" checked disabled>
+                                <label for="net_2">솔라나</label>
+                            </p>
+                            <p class="item">
+                                <input type="checkbox" id="net_3" disabled>
+                                <label for="net_3">클레이튼</label>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="form-item ai-start">
+                        <label>컬렉션 설명 <span>(국문)</span></label>
+                        <p class="fixup">여러분은 역사를 만들 준비가 되었나요? 사상 처음으로 트럼프 대통령의 공식 트럼프 디지털 트레이딩 카드를 수집합니다.<br> 트럼프 대통령의 비범한 삶과 경력에 영감을 받아 손으로 그린 놀라운 예술.이 컬렉션은 독특한 트럼프 트레이딩 카드, 리미티드 원 오브 원, 골드 & 실버 사인 카드를 특징으로 합니다.<br> 트럼프, 우주비행사 트럼프, 비즈니스 트럼프… 당신은 어느 트럼프입니까?트럼프 카드 수집에서 자세히 알아보십시오.</p>
+                    </article>
+                    <article class="form-item ai-start">
+                        <label>컬렉션 설명 <span>(영문)</span></label>
+                        <p class="fixup">Are you ready to make history? For the first time ever, collect your own Official Trump Digital Trading Cards by President Trump.<br>Incredible, hand-drawn art, inspired by President Trump’s extraordinary articlefe & career.The collection features unique Trump Trading Cards, articlemited One-of-Ones, Gold & Silver Autographed Cards.<br>Trump, Astronaut Trump, Business Trump… Which Trump are you?Learn more at CollectTrumpCards.</p>
+                    </article>
+                    <h3 class="form-sTit">수수료</h3>
+                    <article class="form-item">
+                        <label>창작자</label>
+                        <p class="fixup">7.5 %</p>
+                    </article>
+                    <article class="form-item">
+                        <label>창작자 지갑</label>
+                        <p class="fixup">C1G8c6GunifLtSfKt83LBQbCqQ5h73sjQHfssSPze4Ku</p>
+                        <p class="txt">75% 수수료 입니다.</p>
+                    </article>
+                    <article class="form-item">
+                        <label>창작자 지갑</label>
+                        <p class="fixup">4sREyvsLk9FUbQpYp8dwZjjB4BEtysD62wNsmKcq62nP</p>
+                        <p class="txt">25% 수수료 입니다.</p>
+                    </article>
+                    <article class="form-item">
+                        <label>거래</label>
+                        <p class="fixup">2 %</p>
+                    </article>
+                    <article class="form-item">
+                        <label>거래소 지갑</label>
+                        <p class="fixup">TUREyvsLk9FUbQpYp8dwZjjB4BEtysD62wNsmKG49404</p>
+                    </article>
+                    <article><h3 class="form-sTit">SNS</h3></article>
+                    <article class="form-item">
+                        <label>트위터</label>
+                        <p class="fixup"><a href="#">https://twitter.com/Primatesnft</a></p>
+                    </article>
+                    <article class="form-item">
+                        <label>디스코드</label>
+                        <p class="fixup"><a href="#">https://support.discord.com/hc/ko</a></p>
+                    </article>
+                    <h3 class="form-sTit">특성</h3>
+                    <article class="acco_box sc">
+                        <div class="item">
+                            <h3 class="acco_tit">HEAD</h3>
+                            <p class="sc">
+                                <span>giving</span>
+                                <span>furthermore</span>
+                                <span>except</span>
+                                <span>indeed</span>
+                                <span>provided that</span>
+                                <span>deceivingly</span>
+                                <span>prickly</span>
+                                <span>upbeat</span>
+                                <span>ferociously</span>
+                                <span>articleke</span>
+                                <span>hmph</span>
+                            </p>
+                        </div>
+                        <div class="item">
+                            <h3 class="acco_tit">BACKGROUND</h3>
+                            <p class="sc">
+                                <span>Red</span>
+                                <span>Blue</span>
+                                <span>Yellow</span>
+                                <span>Green</span>
+                                <span>Pink</span>
+                            </p>
+                        </div>
+                        <div class="item">
+                            <h3 class="acco_tit">EYES</h3>
+                            <p class="sc">
+                                <span>bugle</span>
+                                <span>nitrogen</span>
+                                <span>disagree</span>
+                                <span>shoreline</span>
+                            </p>
+                        </div>
+                    </article>
+                </section><!--//form-box-->
+                <section class="btn-half">
+                    <a href="#" class="btn light">소유자</a>
+                    <a href="javascript:history.back();" class="btn">확인</a>
+                </section><!--//btn-half-->
+            </main><!--//form-wrap-->
+        </form><!--//box-wrap-->
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</html>

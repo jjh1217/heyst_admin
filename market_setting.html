@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>마켓 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html" class="on">마켓 관리</a></li>
+                    <li class="item">
+                        <span>거래 관리</span>
+                        <div class="sub">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">마켓 관리</h2>
+
+            <section class="list_wrap">
+                <span class="btn list_rgsBtb">마켓 등록</span>
+                <article class="list_box sc ds_mk">
+                    <ul>
+                        <li class="item listTit">
+                            <div>
+                                <p class="listChk">
+                                    <input type="checkbox" id="chk_all">
+                                    <label for="chk_all"></label>
+                                </p>
+                            </div>
+                            <div>No.</div>
+                            <div>마켓</div>
+                            <div>공개여부</div>
+                            <div>수수료</div>
+                            <div>연결</div>
+                            <div>설정</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">6</div>
+                            <div>이더리움</div>
+                            <div><p class="on_off chk"><span></span></p></div>
+                            <div>0.03</div>
+                            <div class="listLong">TF77LFU7TKD3JF71M7B3L5OB395WMOVRKYNLVB5IVF2A14SS22</div>
+                            <div><span class="btn light">저장</span></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_2">
+                                    <label for="chk_2"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">5</div>
+                            <div>솔라나</div>
+                            <div><p class="on_off chk"><span></span></p></div>
+                            <div>0.48</div>
+                            <div class="listLong">EB2TM5UC5UVJ7P0B7GYM1R0TTJMYN73M14QUT841YU3ZGRZLZSGUWUW</div>
+                            <div><span class="btn light">저장</span></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_3">
+                                    <label for="chk_3"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">4</div>
+                            <div>클레이튼</div>
+                            <div><p class="on_off"><span></span></p></div>
+                            <div>0.05</div>
+                            <div class="listLong">40Q5W4NJNE12H5JJRXQ0Z7XN8PRE8JRUV6M7</div>
+                            <div><span class="btn light">저장</span></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_4">
+                                    <label for="chk_4"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">3</div>
+                            <div>코스모스</div>
+                            <div><p class="on_off chk"><span></span></p></div>
+                            <div>0.24</div>
+                            <div class="listLong">01Q0JDV8Y4K3UEVOCOB2P12D4BUKBK</div>
+                            <div><span class="btn light">저장</span></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_5">
+                                    <label for="chk_5"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">2</div>
+                            <div>오클레이나</div>
+                            <div><p class="on_off"><span></span></p></div>
+                            <div>0.13</div>
+                            <div class="listLong">WVTYBNPLAJ1DDKDHAD19BAVJMHYBJ8ZDX44A7GP8</div>
+                            <div><span class="btn light">저장</span></div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_6">
+                                    <label for="chk_6"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">1</div>
+                            <div>비앤비</div>
+                            <div><p class="on_off chk"><span></span></p></div>
+                            <div>0.09</div>
+                            <div class="listLong">3D3KIDT78IFBKSHX18OSSRD154L9</div>
+                            <div><span class="btn light">저장</span></div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+
+                <span class="btn list_delBtb">삭제</span>
+
+                <form action="" autocomplete="off">
+                    <article class="form-search">
+                        <div class="drop-box">
+                            <h3 class="drop">통합 검색</h3>
+                            <input type="hidden" value="통합 검색">
+                            <p class="drop-item">
+                                <span>통합 검색</span>
+                                <span>제목</span>
+                                <span>설명</span>
+                                <span>등록자</span>
+                            </p>
+                        </div>
+                        <input type="text">
+                        <button type="button" class="btn">검색</button>
+                    </article>
+                </form>
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            //저장 - 활성화
+            $(document).on("click", ".ds_mk .on_off", function(){
+                $(this).closest(".item").find(".btn").removeClass("light");
+            });
+
+            //저장 - 실행
+            $(document).on("click", ".ds_mk .item .btn", function(){
+                if(!$(this).hasClass("light")) {
+                    lastTxt = "입력한 정보로<br>저장 하시겠습니까?"
+                    lastDone = `<button type="button" class="confirm-done btn">확인</button>`;
+                    confirmLast(lastTxt, lastDone);
+                }
+            });
+
+            //등록 - 팝업 - 열기
+            $(document).on("click", ".list_rgsBtb", function(e){
+                e.preventDefault();
+                let clt_rgModal = `<form action="" autocomplete="off" class="register-moadal modal-wrap">
+                                        <section class="modal-box">
+                                            <h2>마켓 등록</h2>
+                                            <article class="form-box">
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>마켓명</label>
+                                                </div>
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>수수료</label>
+                                                </div>
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>연결 코드</label>
+                                                </div>
+                                                <div class="btn-half">
+                                                    <span class="btn light confirm-cancel">취소</span>
+                                                    <button type="button" class="btn">등록</button>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </form>`;
+                $("main").append(clt_rgModal);
+                $(".register-moadal").fadeIn(170);
+                $("body").addClass("over-hidden");
+            });
+        });
+    </script>
+</html>

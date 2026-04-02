@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>대시보드</p>
+                <p>매출 현황</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span class="on">대시보드</span>
+                        <div class="sub on">
+                            <a href="./main.html" class="on">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span>거래 관리</span>
+                        <div class="sub">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <div class="dash_wrap">
+                <section class="dash_box dash_chart">
+                    <h2 class="box-tit">매출 현황</h2>
+                    <article class="box-item dash_chartBox">
+                        <div class="dash_chartDate">
+                            <span class="prev"></span>
+                            <strong>2022.09</strong>
+                            <span class="next"></span>
+                        </div>
+                        <div class="dash_chartItem">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </article>
+                </section>
+                <section class="dash_box">
+                    <h2 class="box-tit">일일 수수료</h2>
+                    <article class="box-item dash_item">
+                        <div class="form-item">
+                            <input type="date" class="now_date">
+                        </div>
+                        <h3>
+                            <b>2,498,280 원</b>
+                            <small class="awUp">849,939 원</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>ETH</p>
+                                <p>385,394</p>
+                            </li>
+                            <li>
+                                <p>SOL</p>
+                                <p>9,204,593</p>
+                            </li>
+                            <li>
+                                <p>KCT</p>
+                                <p>820,731</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="dash_box">
+                    <h2 class="box-tit">일일 거래량</h2>
+                    <article class="box-item dash_item">
+                        <div class="form-item">
+                            <input type="date" class="now_date">
+                        </div>
+                        <h3>
+                            <b>13,460,045,610 원</b>
+                            <small class="awDown">120,030,515 원</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>ETH</p>
+                                <p>40,126</p>
+                            </li>
+                            <li>
+                                <p>SOL</p>
+                                <p>23,142,754</p>
+                            </li>
+                            <li>
+                                <p>KCT</p>
+                                <p>7,546,980</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </div><!--//dash_box-->
+
+            <div class="dash_wrap">
+                <section class="dash_box dash_chart">
+                    <h2 class="box-tit">방문 현황</h2>
+                    <article class="box-item dash_chartBox">
+                        <div class="dash_chartDate">
+                            <span class="prev"></span>
+                            <strong>2022.09</strong>
+                            <span class="next"></span>
+                        </div>
+                        <div class="dash_chartItem">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </article>
+                </section>
+                <section class="dash_box">
+                    <h2 class="box-tit">방문자</h2>
+                    <article class="box-item dash_item">
+                        <h3>
+                            <b>17,875,113 회</b>
+                            <small class="awUp">900,030,515 회</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>Metamask</p>
+                                <p>89,003</p>
+                            </li>
+                            <li>
+                                <p>Phantom</p>
+                                <p>6,234</p>
+                            </li>
+                            <li>
+                                <p>Kaikas</p>
+                                <p>635</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="dash_box">
+                    <h2 class="box-tit">로그인 지갑</h2>
+                    <article class="box-item dash_item">
+                        <h3>
+                            <b>1,156,879 개</b>
+                            <small class="awDown">36,493 개</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>Metamask</p>
+                                <p>89,003</p>
+                            </li>
+                            <li>
+                                <p>Phantom</p>
+                                <p>6,234</p>
+                            </li>
+                            <li>
+                                <p>Kaikas</p>
+                                <p>635</p>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </div><!--//dash_box-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            //일일 날짜 오늘 이후 선택 x
+            var now_utc = Date.now();
+            var timeOff = new Date().getTimezoneOffset()*60000;
+            var today = new Date(now_utc-timeOff).toISOString().split("T")[0];
+            $(".now_date").attr("max", today);
+            $(".now_date").val(today);
+        });
+
+        //차트
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
+                datasets: [{
+                    data: [200000, 480000, 360000, 740000, 715200, 675320, 552000, 765210, 203241, 756210, 352061, 702130, 462043, 102460, 365210, 200000, 470000, 360000, 740000, 715200, 675320, 552000, 765210, 203241, 756210, 352061, 702130, 462043, 102460, 365210],
+                    backgroundColor: "rgba(0, 170, 251, .5)",
+                    borderColor: "#00AAFB",
+                    borderWidth: 1,
+                    borderRadius: 5,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }]
+                }
+            }
+        });
+
+        const ctx2 = document.getElementById("myChart2").getContext("2d");
+        const myChart2 = new Chart(ctx2, {
+            type: "bar",
+            data: {
+                labels: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
+                datasets: [{
+                    data: [5230, 4800, 6620, 1005, 956, 6521, 3520, 4621, 6032, 1032, 2541, 5240, 2630, 456, 1254, 5230, 4800, 6301, 1005, 956, 6521, 3520, 4621, 6032, 1032, 2541, 5240, 2630, 456, 1254],
+                    backgroundColor: "rgba(0, 170, 251, .5)",
+                    borderColor: "#00AAFB",
+                    borderWidth: 1,
+                    borderRadius: 5,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</html>

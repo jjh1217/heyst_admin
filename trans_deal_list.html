@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>거래 내역</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html" class="on">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">거래 내역</h2>
+
+            <section class="box-item">
+                <ul class="tab_box">
+                    <li><a href="#" class="item on">이더리움</a></li>
+                    <li><a href="#" class="item">솔라나</a></li>
+                    <li><a href="#" class="item">클레이튼</a></li>
+                </ul><!--/tab_box-->
+                <form action="" autocomplete="off" class="tab_search">
+                    <article>
+                        <h3>검색 조건</h3>
+                        <div class="tab_di">
+                            <input type="date">
+                            <span>~</span>
+                            <input type="date">
+                        </div>
+                        <ul class="tab_dc">
+                            <li>
+                                <input type="radio" id="date_today" name="tab_date">
+                                <label for="date_today">당일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_3" name="tab_date">
+                                <label for="date_3">3일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_7" name="tab_date">
+                                <label for="date_7">7일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_30" name="tab_date">
+                                <label for="date_30">30일</label>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>검색값</h3>
+                        <div class="form-search">
+                            <div class="drop-box">
+                                <h3 class="drop">컬렉션 명</h3>
+                                <input type="hidden" value="컬렉션 명">
+                                <p class="drop-item">
+                                    <span>컬렉션 명</span>
+                                    <span>컨트랙트 주소</span>
+                                </p>
+                            </div>
+                            <input type="text">
+                            <button type="button" class="btn">검색</button>
+                        </div>
+                    </article>
+                </form><!--//tab_search-->
+            </section>
+
+            <section class="list_wrap">
+                <a href="#" class="btn green list_rgsBtb">EXCEL</a>
+                <article class="list_box sc ds_trs_deal">
+                    <ul>
+                        <li class="item listTit">
+                            <div>이미지</div>
+                            <div>컬렉션 명</div>
+                            <div>Token ID</div>
+                            <div>TX</div>
+                            <div>구분</div>
+                            <div>판매자</div>
+                            <div>구매자</div>
+                            <div>가격</div>
+                            <div>거래 시간</div>
+                        </li>
+                        <li class="item">
+                            <div><span class="listImg"><img src="./assets/img/item1.png" alt="NFT"></span></div>
+                            <div><a href="#" class="listLong">MAGICEDEN</a></div>
+                            <div><a href="#">#965860</a></div>
+                            <div><a href="#" class="w-addr">ABUU8F72BJGPTKILMKBXEJ5PPSSR77MV4KMK1Z4W1NII6</a></div>
+                            <div>판매</div>
+                            <div><a href="#" class="w-addr">WYBJZMJPPEF80FUNGVT0BZ5TIC0NJA00XT8XBM27APNTF</a></div>
+                            <div><a href="#" class="w-addr">URYT08ML8LMVXM68BWSX2JUUO2ZW5BPLPJSU2TQV4KK53</a></div>
+                            <div><span class="token sol">490,000</span></div>
+                            <div>10시간 전</div>
+                        </li>
+                        <li class="item">
+                            <div><span class="listImg"><img src="./assets/img/item3.png" alt="NFT"></span></div>
+                            <div><a href="#" class="listLong">PRITMATES</a></div>
+                            <div><a href="#">#53</a></div>
+                            <div><a href="#" class="w-addr">GKRELNXYIXCXRHGK77EIXGOAEH6XHZIIGAK7WWOV94A3Y</a></div>
+                            <div>구매</div>
+                            <div><a href="#" class="w-addr">64FN12I5TTMHVH41ICD7SJUIPAWSW1PMBXLWSRDUHR4AM</a></div>
+                            <div><a href="#" class="w-addr">MIIIQJ8IZ4OKY3OEZDFXCUAFKATGF8LQ8I6ANJJ3ANGOE</a></div>
+                            <div><span class="token sol">2,685</span></div>
+                            <div>3일 전</div>
+                        </li>
+                        <li class="item">
+                            <div><span class="listImg"><img src="./assets/img/long_img.png" alt="NFT"></span></div>
+                            <div><a href="#" class="listLong">SOULS</a></div>
+                            <div><a href="#">#3654</a></div>
+                            <div><a href="#" class="w-addr">IPKKUFQ3H94M15HI7NDKJOYT1RUOO901SS9CKHRKQIQN5</a></div>
+                            <div>구매</div>
+                            <div><a href="#" class="w-addr">GUCSOI3D48K28W5YPD38MC6RD7Z3QCQ9C6BUQBBJNSB6D</a></div>
+                            <div><a href="#" class="w-addr">PRTPDLMF8GPBYLZ1BPQXHH9OUSOU9BNP7GLFZOCFLGR2E</a></div>
+                            <div><span class="token klay">965</span></div>
+                            <div>14일 전</div>
+                        </li>
+                        <li class="item">
+                            <div><span class="listImg"><img src="./assets/img/item4.png" alt="NFT"></span></div>
+                            <div><a href="#" class="listLong">NAKAMIGOS</a></div>
+                            <div><a href="#">#7952</a></div>
+                            <div><a href="#" class="w-addr">U03XEUXGAH4IDXWANOM7G16VAQR3BSFO7DBRQIA6T3G84</a></div>
+                            <div>판매</div>
+                            <div><a href="#" class="w-addr">TFZYPTFU9DO1X7LPS6L8T4R5QOHIBMLCUPA29Z5TP8QTW</a></div>
+                            <div><a href="#" class="w-addr">I2WNF3V6ZTMSAI0VO3U3DV29G53D9EWR6OKFBLGDMSOQN</a></div>
+                            <div><span class="token eth">85,920</span></div>
+                            <div>17일 전</div>
+                        </li>
+                        <li class="item">
+                            <div><span class="listImg"><img src="./assets/img/item5.png" alt="NFT"></span></div>
+                            <div><a href="#" class="listLong">BEANZ</a></div>
+                            <div><a href="#">#135795</a></div>
+                            <div><a href="#" class="w-addr">0YJW9UWS2SEMKDQI9VDUVVBHBVWF4HQ4F5TZL2JNO7EP7</a></div>
+                            <div>구매</div>
+                            <div><a href="#" class="w-addr">8TY3Y8UHV6B99FQEJAP6469O7QR0QXWBQ4T522IQGHGFK</a></div>
+                            <div><a href="#" class="w-addr">G7UABPC6MYTRDODXQW5SJK0KTE26L21POVVBFKAZII4T7</a></div>
+                            <div><span class="token eth">2,000</span></div>
+                            <div>1달 전</div>
+                        </li>
+                        <li class="item">
+                            <div><span class="listImg"><img src="./assets/img/item2.png" alt="NFT"></span></div>
+                            <div><a href="#" class="listLong">GENUINE</a></div>
+                            <div><a href="#">#2</a></div>
+                            <div><a href="#" class="w-addr">SSBNGJUSPYIQ8SURVN42DC4EEUXC598VLAVMETVUIWHYK</a></div>
+                            <div>판매</div>
+                            <div><a href="#" class="w-addr">UWLQBPJXDDMT2J9QBWFLUDTMUH6I5JMAKTX33D8XO2FY9</a></div>
+                            <div><a href="#" class="w-addr">BI1I45UIHTPYO22MASKW5O7H9A86RNR3L5L2M3Y93D40U</a></div>
+                            <div><span class="token klay">168,000</span></div>
+                            <div>2달 전</div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</html>

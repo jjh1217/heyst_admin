@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>페이지 관리</p>
+                <p>팝업 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span>거래 관리</span>
+                        <div class="sub">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span class="on">페이지 관리</span>
+                        <div class="sub on">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html" class="on">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">팝업 관리</h2>
+
+            <section class="list_wrap">
+                <a href="./page_popup_register.html" class="btn list_rgsBtb">팝업 등록</a>
+                <article class="list_box sc ds_pg_list">
+                    <ul>
+                        <li class="item listTit">
+                            <div>
+                                <p class="listChk">
+                                    <input type="checkbox" id="chk_all">
+                                    <label for="chk_all"></label>
+                                </p>
+                            </div>
+                            <div>No.</div>
+                            <div>제목</div>
+                            <div>등록자</div>
+                            <div>기간</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">6</div>
+                            <div class="listLong">CORALUBE 런칭 기념 배너</div>
+                            <div>홍＊동</div>
+                            <div>2022.05.28 ~ 2022.06.23</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_2">
+                                    <label for="chk_2"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">5</div>
+                            <div class="listLong">PALA 런칭 기념 배너</div>
+                            <div>한＊정</div>
+                            <div>2022.04.11 ~ 2022.05.01</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_3">
+                                    <label for="chk_3"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">4</div>
+                            <div class="listLong">NBVBEANZ 런칭 기념 배너</div>
+                            <div>김＊수</div>
+                            <div>2022.03.14 ~ 2022.04.04</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_4">
+                                    <label for="chk_4"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">3</div>
+                            <div class="listLong">XCLUSIVE 런칭 기념 배너</div>
+                            <div>홍＊동</div>
+                            <div>2022.02.09 ~ 2022.03.02</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_5">
+                                    <label for="chk_5"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">2</div>
+                            <div class="listLong">SOLANART 런칭 기념 배너 Ⅱ</div>
+                            <div>이＊나</div>
+                            <div>2022.01.12 ~ 2022.01.31</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_6">
+                                    <label for="chk_6"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">1</div>
+                            <div class="listLong">OPENSEA 런칭 기념 배너 Ⅰ</div>
+                            <div>김＊철</div>
+                            <div>2021.12.15 ~ 2022.01.08</div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+
+                <span class="btn list_delBtb">삭제</span>
+
+                <form action="" autocomplete="off">
+                    <article class="form-search">
+                        <div class="drop-box">
+                            <h3 class="drop">통합 검색</h3>
+                            <input type="hidden" value="통합 검색">
+                            <p class="drop-item">
+                                <span>통합 검색</span>
+                                <span>제목</span>
+                                <span>설명</span>
+                                <span>등록자</span>
+                            </p>
+                        </div>
+                        <input type="text">
+                        <button type="button" class="btn">검색</button>
+                    </article>
+                </form>
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</html>

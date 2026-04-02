@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>입·출금 관리</p>
+                <p>입금 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span>거래 관리</span>
+                        <div class="sub">
+                            <a href="./trans_collection_list.html">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span class="on">입·출금 관리</span>
+                        <div class="sub on">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html" class="on">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">출금 관리</h2>
+
+            <section class="list_wrap">
+                <a href="#" class="btn green list_rgsBtb">EXCEL</a>
+                <article class="list_box sc ds_cash">
+                    <ul>
+                        <li class="item listTit">
+                            <div>일시</div>
+                            <div>지갑 구분</div>
+                            <div>지갑 주소</div>
+                            <div>가상 자산</div>
+                            <div>수량</div>
+                            <div>원화 환산가</div>
+                            <div>결과</div>
+                        </li>
+                        <li class="item">
+                            <div>2022.09.29</div>
+                            <div>메타마스크</div>
+                            <div><a href="#" class="listLong">S3GDBDCVTN4C611XMV6RILT9E5H0YHBQPP21TSMV1VSW1</a></div>
+                            <div>솔라나</div>
+                            <div>8,493</div>
+                            <div>232,292,099</div>
+                            <div class="t-medi c-999">대기</div>
+                        </li>
+                        <li class="item">
+                            <div>2022.09.22</div>
+                            <div>카이카스</div>
+                            <div><a href="#" class="listLong">ESP93T2BNG3ZWZHU12D3GJUB8PLMLZ8CTP3QBJJEFN</a></div>
+                            <div>솔라나</div>
+                            <div>8,493</div>
+                            <div>232,292,099</div>
+                            <div class="t-medi c-green">완료</div>
+                        </li>
+                        <li class="item">
+                            <div>2022.09.18</div>
+                            <div>메타마스크</div>
+                            <div><a href="#" class="listLong">ZLLGASS7Q4UUTX5EV3WSVF6C6UOGFA3MZG7KA6J00X</a></div>
+                            <div>솔라나</div>
+                            <div>8,493</div>
+                            <div>232,292,099</div>
+                            <div class="t-medi c-red">취소</div>
+                        </li>
+                        <li class="item">
+                            <div>2022.08.24</div>
+                            <div>팬텀</div>
+                            <div><a href="#" class="listLong">TWPF37CAB14GNQFUPJL2XO7LNJATDW4ZMEPFJ6</a></div>
+                            <div>솔라나</div>
+                            <div>8,493</div>
+                            <div>232,292,099</div>
+                            <div class="t-medi c-green">완료</div>
+                        </li>
+                        <li class="item">
+                            <div>2022.08.02</div>
+                            <div>메타마스크</div>
+                            <div><a href="#" class="listLong">WHY6NLA9J4YP20VTSLSCGI7F8ADC8THYDGOLFFO2P9H</a></div>
+                            <div>솔라나</div>
+                            <div>8,493</div>
+                            <div>232,292,099</div>
+                            <div class="t-medi c-green">완료</div>
+                        </li>
+                        <li class="item">
+                            <div>2022.07.28</div>
+                            <div>팬텀</div>
+                            <div><a href="#" class="listLong">ROUACGLRF0ZFAT4J56JZGNJFA51Y4IWQJJE7CJJBMUW</a></div>
+                            <div>솔라나</div>
+                            <div>8,493</div>
+                            <div>232,292,099</div>
+                            <div class="t-medi c-red">취소</div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+
+                <form action="" autocomplete="off">
+                    <article class="form-search">
+                        <div class="drop-box">
+                            <h3 class="drop">통합 검색</h3>
+                            <input type="hidden" value="통합 검색">
+                            <p class="drop-item">
+                                <span>통합 검색</span>
+                                <span>부서</span>
+                                <span>설명</span>
+                            </p>
+                        </div>
+                        <input type="text">
+                        <button type="button" class="btn">검색</button>
+                    </article>
+                </form>
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heyst Admin</title>
+        <link href="./assets/css/common.css" rel="stylesheet">
+        <link href="./assets/css/common_responsive.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
+        <link href="./assets/icon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body class="sc">
+        <header>
+            <nav>
+                <a href="./main.html" class="logo"></a>
+                <span class="mobileMeun"></span>
+                <div class="info">
+                    <p>블록체인사업 관리자님</p>
+                    <span class="logout">로그아웃</span>
+                </div>
+            </nav>
+            <div class="paths">
+                <p><span></span></p>
+                <p>거래 관리</p>
+                <p>컬렉션 관리</p>
+            </div>
+        </header><!--//header-->
+
+        <aside class="menu-wrap">
+            <section class="menu-box">
+                <a href="./main.html" class="logo">HEYST ADMIN</a>
+                <ul class="sc">
+                    <li class="item">
+                        <span>대시보드</span>
+                        <div class="sub">
+                            <a href="./main.html">매출 현황</a>
+                            <a href="./dash_connect.html">연결 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="./market_setting.html">마켓 관리</a></li>
+                    <li class="item">
+                        <span class="on">거래 관리</span>
+                        <div class="sub on">
+                            <a href="./trans_collection_list.html" class="on">컬렉션 관리</a>
+                            <a href="./trans_deal_list.html">거래 내역</a>
+                            <a href="./trans_mint_list.html">민팅 캘린더 관리</a>
+                            <a href="./trans_wallet_list.html">지갑주소 관리</a>
+                            <a href="./trans_report_list.html">신고</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>입·출금 관리</span>
+                        <div class="sub">
+                            <a href="./cash_deposit.html">입금 관리</a>
+                            <a href="./cash_withdraw.html">출금 관리</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <span>페이지 관리</span>
+                        <div class="sub">
+                            <a href="./page_banner_list.html">배너 관리</a>
+                            <a href="./page_popup_list.html">팝업 관리</a>
+                            <a href="./page_wallet_list.html">지갑 연결 관리</a>
+                            <a href="./page_user_list.html">관리자 현황</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="https://project-heyst.netlify.app/main" target="_blank">HESYT 바로가기</a></li>
+                </ul>
+            </section>
+        </aside><!--//menu-wrap-->
+
+        <main class="box-wrap">
+            <h2 class="box-tit">컬렉션 관리</h2>
+
+            <section class="box-item">
+                <ul class="tab_box">
+                    <li><a href="#" class="item on">이더리움</a></li>
+                    <li><a href="#" class="item">솔라나</a></li>
+                    <li><a href="#" class="item">클레이튼</a></li>
+                </ul><!--/tab_box-->
+                <form action="" autocomplete="off" class="tab_search">
+                    <article>
+                        <h3>검색 조건</h3>
+                        <div class="tab_di">
+                            <input type="date">
+                            <span>~</span>
+                            <input type="date">
+                        </div>
+                        <ul class="tab_dc">
+                            <li>
+                                <input type="radio" id="date_today" name="tab_date">
+                                <label for="date_today">당일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_3" name="tab_date">
+                                <label for="date_3">3일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_7" name="tab_date">
+                                <label for="date_7">7일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="date_30" name="tab_date">
+                                <label for="date_30">30일</label>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>검색값</h3>
+                        <div class="form-search">
+                            <div class="drop-box">
+                                <h3 class="drop">컬렉션 명</h3>
+                                <input type="hidden" value="컬렉션 명">
+                                <p class="drop-item">
+                                    <span>컬렉션 명</span>
+                                    <span>컨트랙트 주소</span>
+                                </p>
+                            </div>
+                            <input type="text">
+                            <button type="button" class="btn">검색</button>
+                        </div>
+                    </article>
+                </form><!--//tab_search-->
+            </section>
+
+            <section class="box-item">
+                <article class="clt_detail">
+                    <div class="clt_dtImg"><img src="./assets/img/item1.png" alt="NFT"></div>
+                    <ul>
+                        <li class="item">
+                            <h3>프로젝트 개요</h3>
+                            <div>
+                                <p>
+                                    <span>컬렉션 명</span>
+                                    <a href="#">PRIMATES</a>
+                                </p>
+                                <p>
+                                    <span>개별 컬렉션</span>
+                                    <span>컬렉션명</span>
+                                </p>
+                                <p>
+                                    <span>네트워크</span>
+                                    <span>ETHEREUM</span>
+                                </p>
+                                <p>
+                                    <span>인증 여부</span>
+                                    <span>인증 완료</span>
+                                </p>
+                                <p>
+                                    <span>거래량</span>
+                                    <span>10,000.0 K</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="line"></li>
+                        <li class="item">
+                            <h3>SNS</h3>
+                            <div>
+                                <p>
+                                    <span>트위터</span>
+                                    <span>O</span>
+                                </p>
+                                <p>
+                                    <span>디스코드</span>
+                                    <span>O</span>
+                                </p>
+                                <p>
+                                    <span>웹사이트</span>
+                                    <span>X</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="line"></li>
+                        <li class="item">
+                            <h3>리스팅</h3>
+                            <div class="sc">
+                                <p>
+                                    <span>TOMNTOMS</span>
+                                    <span>95</span>
+                                </p>
+                                <p>
+                                    <span>OPENSEA</span>
+                                    <span>184</span>
+                                </p>
+                                <p>
+                                    <span>MAGICEDEN</span>
+                                    <span>1</span>
+                                </p>
+                                <p>
+                                    <span>SOLANART</span>
+                                    <span>65</span>
+                                </p>
+                                <p>
+                                    <span>YAWWW</span>
+                                    <span>658</span>
+                                </p>
+                                <p>
+                                    <span>합계</span>
+                                    <span>2,584</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="./trans_collection_info.html" class="btn">상세 정보 보기</a>
+                </article><!--//tab_search-->
+            </section>
+
+            <section class="list_wrap">
+                <article class="list_box sc ds_trs_cltDt">
+                    <ul>
+                        <li class="item listTit">
+                            <div>
+                                <p class="listChk">
+                                    <input type="checkbox" id="chk_all">
+                                    <label for="chk_all"></label>
+                                </p>
+                            </div>
+                            <div>No.</div>
+                            <div>이미지</div>
+                            <div>Token ID</div>
+                            <div>아웃링크</div>
+                            <div>소유자</div>
+                            <div>가격</div>
+                            <div>공개 여부</div>
+                            <div>등록일</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">800</div>
+                            <div><span class="listImg"><img src="./assets/img/item2.png" alt="NFT"></span></div>
+                            <div><a href="#">#59484</a></div>
+                            <div>MAGICEDEN</div>
+                            <div><a href="#" class="listLong">ABUU8F72BJGPTKILMKBXEJ5PPSSR77MV4KMK1Z4W1NII6</a></div>
+                            <div>543 SOL</div>
+                            <div>미공개</div>
+                            <div>2022.07.05</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">789</div>
+                            <div><span class="listImg"><img src="./assets/img/item3.png" alt="NFT"></span></div>
+                            <div><a href="#">#235</a></div>
+                            <div>PRITMATES</div>
+                            <div><a href="#" class="listLong">WYBJZMJPPEF80FUNGVT0BZ5TIC0NJA00XT8XBM27APNTF</a></div>
+                            <div>9,682 SOL</div>
+                            <div>공개</div>
+                            <div>2022.06.30</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">540</div>
+                            <div><span class="listImg"><img src="./assets/img/long_img.png" alt="NFT"></span></div>
+                            <div><a href="#">#98362</a></div>
+                            <div>SOULS</div>
+                            <div><a href="#" class="listLong">URYT08ML8LMVXM68BWSX2JUUO2ZW5BPLPJSU2TQV4KK53</a></div>
+                            <div>8 SOL</div>
+                            <div>공개</div>
+                            <div>2022.05.18</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">384</div>
+                            <div><span class="listImg"><img src="./assets/img/item4.png" alt="NFT"></span></div>
+                            <div><a href="#">#3</a></div>
+                            <div>NAKAMIGOS</div>
+                            <div><a href="#" class="listLong">GKRELNXYIXCXRHGK77EIXGOAEH6XHZIIGAK7WWOV94A3Y</a></div>
+                            <div>25,413 SOL</div>
+                            <div>미공개</div>
+                            <div>2022.04.09</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">283</div>
+                            <div><span class="listImg"><img src="./assets/img/item5.png" alt="NFT"></span></div>
+                            <div><a href="#">#168</a></div>
+                            <div>BEANZ</div>
+                            <div><a href="#" class="listLong">64FN12I5TTMHVH41ICD7SJUIPAWSW1PMBXLWSRDUHR4AM</a></div>
+                            <div>6,130 SOL</div>
+                            <div>미공개</div>
+                            <div>2022.03.14</div>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <p class="listChk chkItem">
+                                    <input type="checkbox" id="chk_1">
+                                    <label for="chk_1"></label>
+                                </p>
+                            </div>
+                            <div class="t-medi">55</div>
+                            <div><span class="listImg"><img src="./assets/img/item1.png" alt="NFT"></span></div>
+                            <div><a href="#">#9658</a></div>
+                            <div>GENUINE</div>
+                            <div><a href="#" class="listLong">MIIIQJ8IZ4OKY3OEZDFXCUAFKATGF8LQ8I6ANJJ3ANGOE</a></div>
+                            <div>840 SOL</div>
+                            <div>공개</div>
+                            <div>2022.02.22</div>
+                        </li>
+                    </ul>
+                </article><!--//list_box-->
+
+                <span class="btn list_delBtb">삭제</span>
+
+                <ol class="page-box">
+                    <li><a href="#" class="arrow first"></a></li>
+                    <li><a href="#" class="arrow prev"></a></li>
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="arrow next"></a></li>
+                    <li><a href="#" class="arrow last"></a></li>
+                </ol><!--//page-box-->
+            </section><!--//list_wrap-->
+        </main>
+    </body>
+
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            //등록 - 팝업 - 열기
+            $(document).on("click", ".list_rgsBtb", function(e){
+                e.preventDefault();
+                let clt_rgModal = `<form action="" autocomplete="off" class="register-moadal modal-wrap">
+                                        <section class="modal-box">
+                                            <h2>컬렉션 등록</h2>
+                                            <article class="form-box">
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>컬렉션명</label>
+                                                </div>
+                                                <div class="form-item forq">
+                                                    <input type="text">
+                                                    <label>컨트랙트 주소</label>
+                                                </div>
+                                                <div class="btn-half">
+                                                    <span class="btn light confirm-cancel">취소</span>
+                                                    <button type="button" class="btn">등록</button>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </form>`;
+                $("main").append(clt_rgModal);
+                $(".register-moadal").fadeIn(170);
+                $("body").addClass("over-hidden");
+            });
+        });
+    </script>
+</html>
